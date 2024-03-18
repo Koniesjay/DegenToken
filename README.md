@@ -1,41 +1,24 @@
-# Project Title
+Degen Gaming has selected the Avalanche blockchain, a leading blockchain platform for web3 gaming projects, to create a fast and low-fee token.
 
-Simple overview of use/purpose.
+### DegenGamingToken
 
-## Description
+Inherits from the OpenZeppelin `ERC20` standard, providing core token functionality like `minting`, `transfer`, and balance management. Named "DegenGamingToken" with symbol "DGT".
 
-An in-depth paragraph about your project and overview of use.
+### Store Items
 
-## Getting Started
+Introduces a concept of store items with attributes like `ID`, `owner`, `name`, and `price`.
+Stores these items in a mapping storeItems with the `ID` as the key.
 
-### Installing
+### Owner Functions
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+`mint`: Allows the owner (set in the constructor) to mint new DGT tokens.
+`addToStore`: Adds new items to the store with specified name and price.
 
-### Executing program
+### User Functions
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+`burn`: Allows users to burn their own DGT tokens.
+`redeem`: Allows users to redeem store items by paying the price in DGT. This function has some interesting aspects:
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+- Users need to approve spending the required amount of DGT to the contract first.
+- The contract then uses transferFrom to transfer the DGT from the user to the item owner.
+  Finally, the item ownership is transferred to the user.
