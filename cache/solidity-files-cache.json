@@ -38,43 +38,6 @@
         "DegenGamingToken"
       ]
     },
-    "/mnt/c/Users/awinr/Downloads/DegenToken/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
-      "lastModificationDate": 1710707486405,
-      "contentHash": "e436cea06129be2c73cda4b1acc848b5",
-      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
-      "solcConfig": {
-        "version": "0.8.18",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../utils/Context.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Ownable"
-      ]
-    },
     "/mnt/c/Users/awinr/Downloads/DegenToken/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
       "lastModificationDate": 1710707480306,
       "contentHash": "834a0dde221759af42b030253315b086",
